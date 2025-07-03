@@ -1,0 +1,67 @@
+body {
+  background-image : url("imagem/fundo.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+
+}
+
+h1 , h2 {
+  color: black;
+  text-align: center;
+}
+
+.caixa-do-botao {
+
+    padding: 20px;              /* Espaço interno */
+    margin: 40px auto;          /* Espaço externo (centraliza no eixo horizontal) */
+    border-radius: 10px;        /* Cantos arredondados */
+    width: fit-content;  
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.caixa-do-botao button {
+
+    background-color: MediumSeaGreen;     /* Cor da caixa */
+    padding: 20px;              /* Espaço interno */
+    margin: 40px auto;          /* Espaço externo (centraliza no eixo horizontal) */
+    text-align: center;         /* Centraliza o botão dentro da caixa */
+    border-radius: 10px;        /* Cantos arredondados */
+    width: fit-content;  
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.moeda {
+
+  background-image : url("imagem/coin.png");
+  width: 100px;             /* ajusta para um tamanho menor */
+  height: 100px;
+  background-size :contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  color: transparent;
+
+  animation-name: girarMoeda;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+  animation-duration: 1s;
+
+
+}
+
+@keyframes girarMoeda {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
